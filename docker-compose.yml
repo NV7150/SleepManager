@@ -1,0 +1,7 @@
+services:
+  web:
+    build: ./web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./web/public:/root/public
