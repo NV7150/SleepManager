@@ -1,0 +1,1 @@
+INSERT INTO user (name, keyword) VALUES ("dang0", "IoT");
