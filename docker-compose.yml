@@ -36,6 +36,8 @@ services:
 
   app-server:
     container_name: "app-server"
+    depends_on:
+      - db
     build: ./application
     ports:
       - "80:80"

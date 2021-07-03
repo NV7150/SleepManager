@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
-user_name = "root"
+user_name = "user"
 password = "password"
 host = "db"
 database_name = "sample_db"
