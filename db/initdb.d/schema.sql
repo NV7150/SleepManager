@@ -1,6 +1,7 @@
 CREATE TABLE user (
     id INT NOT NULL AUTO_INCREMENT,
     name VARCHAR(30) NOT NULL,
-    keyword VARCHAR(30),
+    password VARCHAR(30) NOT NULL,
+    data_json VARCHAR(16384),
     PRIMARY KEY (id)
 );
