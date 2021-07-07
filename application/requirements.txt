@@ -3,3 +3,4 @@ fastapi
 sqlalchemy
 mysqlclient
 databases
+pydantic
