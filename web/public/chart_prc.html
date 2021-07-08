@@ -16,24 +16,17 @@
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['2021/07/07', '2021/07/08', '2021/07/09', '2021/07/10', '2021/07/11', '2021/07/12', '2021/07/13'],
+                labels: ['2021/07/07', '2021/07/08', '2021/07/09', '2021/07/10', '2021/07/11', '2021/07/12', '2021/07/12'],
                 datasets: [{
-                    label: '折れ線A',
+                    label: '調子(5段階評価)',
                     type: "line",
                     fill: false,
-                    data: [10000, 11000, 15000, 12000, 9000, 12000, 13000],
+                    data: [2, 4, 3, 3, 3, 4, 5],
                     borderColor: "rgb(154, 162, 235)",
                     yAxisID: "y-axis-1",
                 }, {
-                    label: '折れ線B',
-                    type: "line",
-                    fill: false,
-                    data: [8000, 9000, 10000, 9000, 6000, 8000, 7000],
-                    borderColor: "rgb(54, 162, 235)",
-                    yAxisID: "y-axis-1",
-                }, {
-                    label: '棒グラフ',
-                    data: [22, 23, 10, 15, 40, 35, 30],
+                    label: '睡眠時間',
+                    data: [4, 8, 7, 7, 6, 10, 9],
                     borderColor: "rgb(255, 99, 132)",
                     backgroundColor: "rgba(255, 99, 132, 0.2)",
                     yAxisID: "y-axis-2",
@@ -49,20 +42,20 @@
                     yAxes: [{
                         id: "y-axis-1",
                         type: "linear",
-                        position: "left",
+                        position: "right",
                         ticks: {
-                            max: 15000,
+                            max: 5,
                             min: 0,
-                            stepSize: 1000
+                            stepSize: 1
                         },
                     }, {
                         id: "y-axis-2",
                         type: "linear",
-                        position: "right",
+                        position: "left",
                         ticks: {
-                            max: 200,
+                            max: 15,
                             min: 0,
-                            stepSize: 5
+                            stepSize: 3
                         },
                         gridLines: {
                             drawOnChartArea: false,
@@ -80,22 +73,21 @@
             data: {
                 labels: ['2021/07/07', '2021/07/08', '2021/07/09', '2021/07/10', '2021/07/11', '2021/07/12', '2021/07/13'],
                 datasets: [{
-                    label: '折れ線A',
+                    label: '調子(5段階評価)',
                     type: "line",
                     fill: false,
-                    data: [10000, 11000, 15000, 12000, 9000, 12000, 13000],
+                    data: [2, 4, 3, 3, 3, 4, 5],
                     borderColor: "rgb(154, 162, 235)",
                     yAxisID: "y-axis-1",
-                }, {
-                    label: '折れ線B',
-                    type: "line",
-                    fill: false,
-                    data: [8000, 9000, 10000, 9000, 6000, 8000, 7000],
-                    borderColor: "rgb(54, 162, 235)",
-                    yAxisID: "y-axis-1",
-                }, {
-                    label: '棒グラフ',
-                    data: [22, 23, 10, 15, 40, 35, 30],
+                },  {
+                    label: '推奨就寝時間との乖離',
+                    data: [5, 1, 2, 1, 2, 1, 0],
+                    borderColor: "rgb(32,255,88)",
+                    backgroundColor: "rgb(32, 255, 88, 0.2)",
+                    yAxisID: "y-axis-2",
+                },　{
+                    label: '推奨起床時間との乖離',
+                    data: [1, 2, 1, 2, 1, 1, 1],
                     borderColor: "rgb(255, 99, 132)",
                     backgroundColor: "rgba(255, 99, 132, 0.2)",
                     yAxisID: "y-axis-2",
@@ -111,20 +103,20 @@
                     yAxes: [{
                         id: "y-axis-1",
                         type: "linear",
-                        position: "left",
+                        position: "right",
                         ticks: {
-                            max: 15000,
+                            max: 5,
                             min: 0,
-                            stepSize: 1000
+                            stepSize: 1
                         },
                     }, {
                         id: "y-axis-2",
                         type: "linear",
-                        position: "right",
+                        position: "left",
                         ticks: {
-                            max: 200,
+                            max: 10,
                             min: 0,
-                            stepSize: 5
+                            stepSize: 2
                         },
                         gridLines: {
                             drawOnChartArea: false,
