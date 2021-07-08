@@ -16,16 +16,19 @@
         var myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['2021/07/07', '2021/07/08', '2021/07/09', '2021/07/10', '2021/07/11', '2021/07/12', '2021/07/12'],
+              //日にち情報
+                labels: ['2021/07/02', '2021/07/03', '2021/07/04', '2021/07/05', '2021/07/06', '2021/07/07', '2021/07/08'],
                 datasets: [{
                     label: '調子(5段階評価)',
                     type: "line",
                     fill: false,
+                    //調子情報を反映させたい
                     data: [2, 4, 3, 3, 3, 4, 5],
                     borderColor: "rgb(154, 162, 235)",
                     yAxisID: "y-axis-1",
                 }, {
                     label: '睡眠時間',
+                    //こちらも睡眠時間の情報をグラフ化したい
                     data: [4, 8, 7, 7, 6, 10, 9],
                     borderColor: "rgb(255, 99, 132)",
                     backgroundColor: "rgba(255, 99, 132, 0.2)",
@@ -71,7 +74,7 @@
         var myChart2 = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: ['2021/07/07', '2021/07/08', '2021/07/09', '2021/07/10', '2021/07/11', '2021/07/12', '2021/07/13'],
+                labels: ['2021/07/02', '2021/07/03', '2021/07/04', '2021/07/05', '2021/07/06', '2021/07/07', '2021/07/08'],
                 datasets: [{
                     label: '調子(5段階評価)',
                     type: "line",
@@ -114,9 +117,9 @@
                         type: "linear",
                         position: "left",
                         ticks: {
-                            max: 10,
+                            max: 5,
                             min: 0,
-                            stepSize: 2
+                            stepSize: 1
                         },
                         gridLines: {
                             drawOnChartArea: false,
